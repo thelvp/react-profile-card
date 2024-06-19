@@ -2,6 +2,8 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
+// TODO: split up components in different files.
+
 const Avatar = (props) => {
   return (
     <img
