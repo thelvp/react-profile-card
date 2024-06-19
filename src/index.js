@@ -25,27 +25,27 @@ const SkillList = (props) => {
   return (
     <div className='skill-list'>
       <Skill
-        skillName='HTML/CSS'
+        skill='HTML/CSS'
         color='lightcoral'
         emoji='🌈'
       />
       <Skill
-        skillName='Javascript'
+        skill='Javascript'
         color='indianred'
         emoji='💪'
       />
       <Skill
-        skillName='React'
+        skill='React'
         color='palevioletred'
         emoji='✨'
       />
       <Skill
-        skillName='Ruby/Ruby on Rails'
+        skill='Ruby/Ruby on Rails'
         color='sandybrown'
         emoji='♦️'
       />
       <Skill
-        skillName='Git/Github'
+        skill='Git/Github'
         color='lightsteelblue'
         emoji='⚡️'
       />
@@ -59,7 +59,7 @@ const Skill = (props) => {
       className='skill'
       style={{ backgroundColor: props.color }}
     >
-      {props.emoji} {props.skillName}
+      {props.emoji} {props.skill}
     </div>
   );
 };
