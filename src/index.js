@@ -59,7 +59,9 @@ const Skill = (props) => {
       className='skill'
       style={{ backgroundColor: props.color }}
     >
-      {props.emoji} {props.skill}
+      <span>
+        {props.emoji} {props.skill}
+      </span>
     </div>
   );
 };
