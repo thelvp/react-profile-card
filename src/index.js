@@ -70,7 +70,7 @@ function App() {
     <div className='card'>
       <Avatar
         filepath='/avatar.jpeg'
-        alt='avatar picture'
+        alt='Loes van Puijenbroek'
       />
       <div className='data'>
         <Intro
