@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 // TODO: split up components in different files.
+// TODO: fix avatar.
 
 const Avatar = (props) => {
   return (
