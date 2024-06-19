@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const Avatar = (props) => {
-  console.log(props);
   return (
     <img
       className='avatar'
