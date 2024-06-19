@@ -55,12 +55,12 @@ const SkillList = (props) => {
 
 const Skill = (props) => {
   return (
-    <p
+    <div
       className='skill'
       style={{ backgroundColor: props.color }}
     >
       {props.emoji} {props.skillName}
-    </p>
+    </div>
   );
 };
 
