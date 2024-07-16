@@ -1,73 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
-
-// TODO: split up components in different files.
-// TODO: fix avatar.
-
-const Avatar = (props) => {
-  return (
-    <img
-      className='avatar'
-      src={props.filepath}
-      alt={props.alt}
-    ></img>
-  );
-};
-
-const Intro = (props) => {
-  return (
-    <div>
-      <h1>{props.name}</h1>
-      <p>{props.intro}</p>
-    </div>
-  );
-};
-
-const SkillList = (props) => {
-  return (
-    <div className='skill-list'>
-      <Skill
-        skill='HTML/CSS'
-        color='lightcoral'
-        emoji='🌈'
-      />
-      <Skill
-        skill='Javascript'
-        color='indianred'
-        emoji='💪'
-      />
-      <Skill
-        skill='React'
-        color='palevioletred'
-        emoji='✨'
-      />
-      <Skill
-        skill='Ruby/Ruby on Rails'
-        color='sandybrown'
-        emoji='♦️'
-      />
-      <Skill
-        skill='Git/Github'
-        color='lightsteelblue'
-        emoji='⚡️'
-      />
-    </div>
-  );
-};
-
-const Skill = (props) => {
-  return (
-    <div
-      className='skill'
-      style={{ backgroundColor: props.color }}
-    >
-      <span>
-        {props.emoji} {props.skill}
-      </span>
-    </div>
-  );
-};
+import { Avatar } from './components/avatar';
+import { Intro } from './components/intro';
+import { SkillList } from './components/skill-list';
 
 function App() {
   return (
